@@ -50,7 +50,16 @@
             <button class="view-job">VIEW JOB</button>
         </div>
     </div>
-
+<script>
+// view job button
+const viewJob = document.querySelectorAll('.view-job');
+viewJob.forEach((button) => {
+  button.addEventListener('click', () => {
+    const jobTit = button.parentElement.querySelector('.job-title').textContent;
+    alert(`You clicked on: ${jobTit}`);
+  });
+});
+</script>
 </body>
 
 </html>
